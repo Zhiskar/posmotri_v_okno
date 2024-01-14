@@ -302,7 +302,7 @@ input[type="checkbox"]:focus-visible {
 } /* в фокусе */
 
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
@@ -317,7 +317,7 @@ input[type="checkbox"]:focus-visible {
   outline-offset: 1px;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;  
 }
 
@@ -325,7 +325,3 @@ input[type="checkbox"]:focus-visible {
   border: 1px solid #FFF;    
 }
 
-.button: focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-}
