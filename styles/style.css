@@ -23,7 +23,6 @@ html {
   padding-inline-start: 30px;
   padding-inline-end: 30px;
 }
-/*убрал position*/
 
 h1,
 h2,
@@ -42,6 +41,16 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 fieldset {
@@ -69,9 +78,8 @@ fieldset {
   align-items: flex-end;
   inline-size: 1140px;
 }
-/*убрал координаты, убрал padding*/
 
-.content__list {  
+.content__list {
   block-size: 298px;
   display: flex;
   flex-direction: column;
@@ -89,9 +97,9 @@ fieldset {
 }
 
 .result {
-display: flex;
-flex-direction: column;
-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .result__video {
@@ -101,11 +109,10 @@ gap: 16px;
   object-fit: cover;
   object-position: center;
 }
-/*добавлены object-fit: cover и object-position: center*/
 
 .result__video-container {
   inline-size: 711px;
-  block-size: 386px; 
+  block-size: 386px;
 }
 
 .content__video-card {
@@ -124,7 +131,6 @@ gap: 16px;
   object-fit: cover;
   object-position: center;
 }
-/*добавлены object-fit: cover и object-position: center*/
 
 .content__video-card-description-container {
   width: 200px;
@@ -134,7 +140,7 @@ gap: 16px;
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 16.2px;
   overflow: hidden;
 }
 
@@ -150,7 +156,7 @@ gap: 16px;
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;  
+  line-height: normal;
 }
 
 .content__accent {
@@ -164,7 +170,6 @@ gap: 16px;
   margin-block: 2px;
   margin-inline: 2px;
 }
-/*элемент сделан блочным, добавлены margin 2px со всех сторон*/
 
 .content__card-link:hover {
   text-decoration-line: underline;
@@ -182,7 +187,6 @@ gap: 16px;
 .content__card-link_current {
   background: #545050;
 }
-/*добавлены стили для класса .content__card-link_current*/
 
 .content__video-card-title {
   color: #fff;
@@ -202,16 +206,6 @@ gap: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px; /* 90% */
-}
-
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 input {
@@ -284,7 +278,6 @@ input {
   outline: none;
   cursor: pointer;
 }
-/*убрал двойную рамку при наведении*/
 
 .button {
   block-size: 34px;
@@ -314,7 +307,6 @@ input {
 .button:focus {
   outline: none;
 }
-/*сброшен outline при focus у кнопок*/
 
 .button:active {
   border: 1px solid #fff;
@@ -356,14 +348,13 @@ input[type="checkbox"] + .search-form__pseudo-checkbox {
 }
 /*исправлены размеры*/
 
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox {  
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-image: url(../images/Group38.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
-  border: none;  
+  background-size: cover;
+  border: none;
 }
-/*исправлены размеры*/
 
 input[type="checkbox"]:focus-visible {
   outline: 1px solid #fff;
