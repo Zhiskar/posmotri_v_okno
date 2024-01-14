@@ -13,15 +13,16 @@ html {
   justify-content: center;
   align-content: center;
   inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  padding-block-start: 133px;
+  /*padding-block-start: 133px;
   padding-block-end: 133px;
   padding-inline-start: 30px;
-  padding-inline-end: 30px;
+  padding-inline-end: 30px;*/
 }
 /*убрал position*/
 
