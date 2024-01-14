@@ -82,9 +82,9 @@ fieldset {
   position: relative;
 }
 
-.content__list-item {
+/*.content__list-item {
   block-size: 298px;  
-}
+}*/
 
 .content__details {
   inline-size: 100%;  
