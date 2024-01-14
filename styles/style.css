@@ -68,7 +68,6 @@ fieldset {
   gap: 30px;
   align-items: flex-end;
   padding: 133px 30px;
-  position: absolute;
   top: 0;
   left: 0;  
 }
@@ -315,10 +314,6 @@ input[type="checkbox"]:focus-visible {
 .search-form__checkbox:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
-}
-
-.button:active {
-  background-color: #545050;  
 }
 
 .search-form__textfield:active {
