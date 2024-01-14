@@ -78,7 +78,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -137,7 +137,7 @@ fieldset {
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 90%;
   overflow: hidden;
 }
 
@@ -204,7 +204,7 @@ fieldset {
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 90%;
 }
 
 .visually-hidden {
