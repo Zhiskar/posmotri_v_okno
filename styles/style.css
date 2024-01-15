@@ -280,7 +280,9 @@ input {
 }
 
 .search-form__textfield:active {
-  border: 1px solid #fff;
+  border: none;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__textfield:hover {
